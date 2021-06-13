@@ -7,10 +7,12 @@ source "$CURRENT_DIR/scripts/helpers.sh"
 
 temp_interpolation=(
   "\\#{temp_cpu}"
+  "\\#{temp_nvme}"
 )
 
 temp_commands=(
   "#($CURRENT_DIR/scripts/temp_cpu.sh)"
+  "#($CURRENT_DIR/scripts/temp_nvme.sh)"
 )
 
 do_interpolation() {
